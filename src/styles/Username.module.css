@@ -1,0 +1,56 @@
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px #4747470b;
+  backdrop-filter: blur(7.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(7.1px);
+  @apply border-4 border-gray-50 shrink-0 h-3/4 w-[30%] rounded-3xl py-20 px-7 min-w-max flex items-center justify-center;
+}
+.profile_img {
+  @apply border-4 border-gray-100 w-[135px] rounded-full shadow-lg cursor-pointer;
+  @apply hover:border-gray-200;
+}
+
+.textbox {
+  @apply border-0 px-5 py-1 rounded-xl w-3/4 shadow-sm text-lg flex items-center justify-center;
+  @apply focus:outline-none;
+}
+.btn {
+  border-width: 1px;
+  background-color: rgba(99 102 241 1);
+  width: 75%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  color: rgb(249 250 251);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0;
+  box-shadow: #000000;
+  --tw-bg-opacity: 1;
+}
+.btn {
+  @apply border bg-indigo-500 w-3/4 py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center;
+}
+
+.btn:hover {
+  background-color: #ff6a6a;
+}
+.btn::before {
+  background-color: rgb(29 78 216);
+}
+body {
+  background: #dcdce6;
+  background-image: url("../assets/Background.png");
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
